@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <div id="counter"></div>
 </head>
 <body>
     test
     <script>
-        setInterval(()=>console.log("its log"),1000)
+        setInterval(()=>{
+            console.log("its log")
+            document.getElementById("counter").innerHTML(Math.random());
+        },1000)
     </script>
 </body>
 </html>
