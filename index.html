@@ -15,7 +15,7 @@
   <ul>
     <li>long press on elements for edit <strong>attribures</strong>.</li>
     <li>when an element is active by tap on <strong>Edit element css styles</strong> you can edit css properties.</li>
-    <li>in this  page every <strong>3 sec</strong> you can see this records on network tab.</li>
+    <li>this page will call a ajax query every <strong>3 sec</strong> you can see this records on network tab.</li>
   </ul>
     <div id="counter"></div>
     <div class="example-class">this is a div</div>
@@ -28,8 +28,8 @@
             document.getElementById("counter").innerHTML=(Math.random());
             $.ajax({
                 type: "post",
-                url: "goole.com/ajax/tset",
-                data: {token:"test token",username:"davod",password:"hazinePassword"},
+                url: "goole.com/ajax/tset"+Math.random(),
+                data: {token:"test token",username:"john",password:"hazinePassword"+Math.random()},
                 success: function (response) {
 
                 }
